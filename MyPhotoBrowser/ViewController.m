@@ -49,7 +49,7 @@
         NSInteger row   = index%2;
         NSInteger colum = index/2;
         UIImageView *imageView = [[UIImageView alloc] init];
-        imageView.frame = CGRectMake(50 + row *(150 + 10), 200 + colum *(150 + 10), 150, 150);
+        imageView.frame = CGRectMake((self.view.frame.size.width - 310) / 2.0 + row *(150 + 10), 200 + colum *(150 + 10), 150, 150);
         imageView.contentMode = UIViewContentModeScaleAspectFit;
         imageView.userInteractionEnabled = YES;
         imageView.backgroundColor = [UIColor grayColor];
